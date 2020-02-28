@@ -27,13 +27,14 @@
     function findHorseShoes(searchTerm) {
       $.get("https://totally-real-horse-shoe-api.com/api/data")
       .then(data => {
+        console.log("I heart horseshoes");
         console.log(data);
       })
       .catch(err => {
         console.log(err);
       });
     }
-    
+
     </script>
   </body>
 </html>
