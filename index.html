@@ -29,12 +29,11 @@
       .then(data => {
         console.log("I heart horseshoes");
         console.log(data);
-        data.forEach(horseShoe => {
-          const html = 
-          `<div>${horseShoe.size}</div>
-           <div>${horseShoe.material}</div>        
-          `
-        });
+
+        for (let i = 0; i < data.length; i++) {
+          let html = "<div>" + data[0].size + "</div>";
+          html += "<div>" + data[0].material + "</div>";
+        }
       })
       .catch(err => {
         console.log("something terrible happened");
